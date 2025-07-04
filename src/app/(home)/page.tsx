@@ -1,4 +1,5 @@
 import React from "react"
+import type { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import {
   Card,
@@ -7,6 +8,46 @@ import {
   CardDescription,
 } from "@/components/ui/card"
 import { Check, Folder, Users, Clock, ShieldCheck } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Ahason – All-in-One Digital Life Platform",
+  description:
+    "Simplify your digital world with Ahason. One platform for privacy, identity, and everything you do online — calm, clear, and fully yours.",
+  keywords: [
+    "ahason",
+    "digital identity",
+    "privacy platform",
+    "lifestyle app",
+    "secure login",
+    "all in one app",
+  ],
+  robots: "index, follow",
+  openGraph: {
+    title: "Ahason – All-in-One Digital Life Platform",
+    description:
+      "Simplify your digital world with Ahason. One platform for privacy, identity, and everything you do online — calm, clear, and fully yours.",
+    url: "https://ahason.com",
+    type: "website",
+    images: [
+      {
+        url: "https://ahason.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ahason Hero Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ahason – All-in-One Digital Life Platform",
+    description:
+      "Simplify your digital world with Ahason. One platform for privacy, identity, and everything you do online — calm, clear, and fully yours.",
+    images: ["https://ahason.com/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://ahason.com",
+  },
+}
 
 export default function HomePage() {
   return (
